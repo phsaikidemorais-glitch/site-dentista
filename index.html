@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorriso Perfeito - Clínica Odontológica</title>
+    <meta name="description" content="Clínica odontológica especializada em tratamentos modernos. Agende sua consulta.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-sm shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <span class="text-3xl">🦷</span>
+                <span class="text-xl font-bold text-cyan-700">Sorriso Perfeito</span>
+            </div>
+            <div class="hidden md:flex gap-8 items-center">
+                <a href="#inicio" class="text-gray-700 hover:text-cyan-600 font-medium">Início</a>
+                <a href="#servicos" class="text-gray-700 hover:text-cyan-600 font-medium">Serviços</a>
+                <a href="#sobre" class="text-gray-700 hover:text-cyan-600 font-medium">Sobre</a>
+                <a href="#contato" class="text-gray-700 hover:text-cyan-600 font-medium">Contato</a>
+                <a href="#agendar" class="bg-cyan-600 text-white px-5 py-2 rounded-full hover:bg-cyan-700 transition">Agendar</a>
+            </div>
+            <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">☰</button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-6 py-4 space-y-3 shadow">
+            <a href="#inicio" class="block text-gray-700">Início</a>
+            <a href="#servicos" class="block text-gray-700">Serviços</a>
+            <a href="#sobre" class="block text-gray-700">Sobre</a>
+            <a href="#contato" class="block text-gray-700">Contato</a>
+            <a href="#agendar" class="block bg-cyan-600 text-white px-5 py-2 rounded-full text-center">Agendar</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="inicio" class="gradient-bg pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="text-white fade-in">
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                    Seu sorriso<br>merece o melhor
+                </h1>
+                <p class="text-xl mb-8 text-cyan-50">
+                    Tratamentos odontológicos modernos com tecnologia de ponta e atendimento humanizado.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#agendar" class="bg-white text-cyan-700 px-8 py-4 rounded-full font-semibold text-center hover:bg-gray-100 transition">
+                        Agendar Consulta
+                    </a>
+                    <a href="#servicos" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-center hover:bg-white/10 transition">
+                        Ver Serviços
+                    </a>
+                </div>
+                <div class="flex gap-8 mt-12">
+                    <div>
+                        <div class="text-3xl font-bold">15+</div>
+                        <div class="text-cyan-100 text-sm">Anos de experiência</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold">5000+</div>
+                        <div class="text-cyan-100 text-sm">Pacientes atendidos</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold">4.9★</div>
+                        <div class="text-cyan-100 text-sm">Avaliação Google</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden md:flex justify-center">
+                <div class="bg-white/20 backdrop-blur-sm rounded-3xl p-12 text-center">
+                    <div class="text-9xl">🦷</div>
+                    <p class="text-white text-lg mt-4 font-medium">Cuidado completo<br>com seu sorriso</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="servicos" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Nossos Serviços</h2>
+                <p class="text-gray-600 text-lg">Tratamentos completos para toda a família</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl card-hover">
+                    <div class="text-5xl mb-4">✨</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Clareamento Dental</h3>
+                    <p class="text-gray-600">Deixe seu sorriso mais branco e brilhante com nossos tratamentos seguros e eficazes.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl card-hover">
+                    <div class="text-5xl mb-4">🔧</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Implantes Dentários</h3>
+                    <p class="text-gray-600">Recupere seu sorriso completo com implantes de qualidade e durabilidade.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl card-hover">
+                    <div class="text-5xl mb-4">😁</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Ortodontia</h3>
+                    <p class="text-gray-600">Aparelhos modernos e invisíveis para alinhar seus dentes com conforto.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl card-hover">
+                    <div class="text-5xl mb-4">🩺</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Limpeza e Prevenção</h3>
+                    <p class="text-gray-600">Cuidado preventivo para manter sua saúde bucal sempre em dia.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl card-hover">
+                    <div class="text-5xl mb-4">👶</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Odontopediatria</h3>
+                    <p class="text-gray-600">Atendimento especializado e acolhedor para as crianças.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl card-hover">
+                    <div class="text-5xl mb-4">🦷</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Estética Dental</h3>
+                    <p class="text-gray-600">Lentes de contato, facetas e tratamentos para um sorriso perfeito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="bg-cyan-100 rounded-3xl p-12 text-center">
+                <div class="text-9xl mb-4">👨‍⚕️</div>
+                <p class="text-cyan-800 font-semibold text-lg">Profissionais qualificados<br>cuidando do seu sorriso</p>
+            </div>
+            <div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">Sobre Nossa Clínica</h2>
+                <p class="text-gray-600 text-lg mb-4">
+                    Há mais de 15 anos cuidando do sorriso de famílias com excelência, tecnologia avançada e atendimento humanizado.
+                </p>
+                <p class="text-gray-600 text-lg mb-6">
+                    Nossa equipe de especialistas está sempre atualizada com as melhores técnicas para oferecer o tratamento ideal para você.
+                </p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="text-cyan-600 text-xl">✓</span>
+                        <span class="text-gray-700">Equipamentos de última geração</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-cyan-600 text-xl">✓</span>
+                        <span class="text-gray-700">Equipe especializada e certificada</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-cyan-600 text-xl">✓</span>
+                        <span class="text-gray-700">Ambiente confortável e acolhedor</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-cyan-600 text-xl">✓</span>
+                        <span class="text-gray-700">Convênios e parcelamento facilitado</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Agendamento -->
+    <section id="agendar" class="py-20 px-6 gradient-bg">
+        <div class="max-w-3xl mx-auto bg-white rounded-3xl p-10 shadow-2xl">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4 text-center">Agende sua Consulta</h2>
+            <p class="text-gray-600 text-center mb-8">Preencha o formulário e entraremos em contato</p>
+            <form onsubmit="agendar(event)" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Seu nome" required class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan-500">
+                    <input type="tel" placeholder="WhatsApp" required class="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan-500">
+                </div>
+                <input type="email" placeholder="Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan-500">
+                <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan-500">
+                    <option value="">Qual serviço deseja?</option>
+                    <option>Clareamento Dental</option>
+                    <option>Implantes</option>
+                    <option>Ortodontia</option>
+                    <option>Limpeza</option>
+                    <option>Odontopediatria</option>
+                    <option>Estética Dental</option>
+                    <option>Outro</option>
+                </select>
+                <textarea placeholder="Mensagem (opcional)" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cyan-500"></textarea>
+                <button type="submit" class="w-full bg-cyan-600 text-white py-4 rounded-lg font-semibold hover:bg-cyan-700 transition text-lg">
+                    Agendar Consulta
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-20 px-6 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">Entre em Contato</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl text-center card-hover">
+                    <div class="text-5xl mb-4">📍</div>
+                    <h3 class="font-bold text-gray-800 mb-2">Endereço</h3>
+                    <p class="text-gray-600">Rua Exemplo, 123<br>Centro - Sua Cidade</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl text-center card-hover">
+                    <div class="text-5xl mb-4">📞</div>
+                    <h3 class="font-bold text-gray-800 mb-2">Telefone</h3>
+                    <p class="text-gray-600">(11) 9999-9999<br>(11) 3333-3333</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl text-center card-hover">
+                    <div class="text-5xl mb-4">🕐</div>
+                    <h3 class="font-bold text-gray-800 mb-2">Horário</h3>
+                    <p class="text-gray-600">Seg-Sex: 8h às 19h<br>Sáb: 8h às 13h</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                <span class="text-3xl">🦷</span>
+                <span class="text-xl font-bold">Sorriso Perfeito</span>
+            </div>
+            <p class="text-gray-400 mb-4">Cuidando do seu sorriso há mais de 15 anos</p>
+            <p class="text-gray-500 text-sm">© 2026 Sorriso Perfeito - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flutuante -->
+    <a href="https://wa.me/5511999999999" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 transition z-40">
+        💬
+    </a>
+
+    <script>
+        function agendar(event) {
+            event.preventDefault();
+            alert('Solicitação enviada! Entraremos em contato em breve. 😊\n\n(Em produção, isso enviaria pro WhatsApp ou email do cliente)');
+            event.target.reset();
+        }
+    </script>
+
+</body>
+</html>
